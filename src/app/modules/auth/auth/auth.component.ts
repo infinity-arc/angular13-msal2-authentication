@@ -5,7 +5,7 @@ import { isIE, isIframe } from '../_config';
 
 @Component({
 	selector: 'app-auth',
-	templateUrl: './auth.component.html',
+	templateUrl: 	'./auth.component.html',
 	styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent implements OnInit {
