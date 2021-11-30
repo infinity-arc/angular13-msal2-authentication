@@ -1,13 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthComponent } from './modules/auth/auth/auth.component';
-import { isIframe } from './modules/auth/_config';
+import { MsalGuard } from '@azure/msal-angular';
+import { AuthModule } from './auth/auth.module';
+import { AuthComponent } from './auth/auth/auth.component';
+import { ProfileComponent } from './auth/profile/profile.component';
+import { isIframe } from './auth/_config';
 
 const routes: Routes = [
 	{
-		path: '',
-		loadChildren: () => import('src/app/modules/auth/auth.module').then(m => m.AuthModule),
-		pathMatch: 'full'
+		path: '',redirectTo: '/auth',pathMatch: 'full'
+	},
+	{
+		path: 'auth',
+		component: AuthComponent,
+		// loadChildren: ()=> import('src/app/modules/auth/auth.module').then(m=>m.AuthModule)
+		// component: AuthComponent
+		canActivate: [MsalGuard]
+	},
+	{
+		path: 'profile',
+		component: ProfileComponent,
+		canActivate: [MsalGuard]
 	}
 ];
 
@@ -16,7 +29,7 @@ const routerOptions = {
 }
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, routerOptions)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
