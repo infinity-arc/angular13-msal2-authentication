@@ -2,8 +2,8 @@
  * @description MSAL Configuration file
  */
 
-import { BrowserAuthOptions, BrowserSystemOptions, CacheOptions, Configuration, InteractionType, PublicClientApplication } from "@azure/msal-browser"
-import { MsalCustomNavigationClient, MsalGuardConfiguration, MsalInterceptorConfiguration, MsalModule } from '@azure/msal-angular';
+import { BrowserAuthOptions, BrowserSystemOptions, CacheOptions, InteractionType, PublicClientApplication } from "@azure/msal-browser"
+import { MsalGuardConfiguration, MsalInterceptorConfiguration } from '@azure/msal-angular';
 import { isIE } from "./isIE";
 
 export const isPopup = false;

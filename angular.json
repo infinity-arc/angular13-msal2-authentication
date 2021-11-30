@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"TraqItUi": {
+		"msalauthng": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -20,7 +20,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/TraqItUi",
+						"outputPath": "dist/msalauthng",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
@@ -73,10 +73,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "TraqItUi:build:production"
+							"browserTarget": "msalauthng:build:production"
 						},
 						"development": {
-							"browserTarget": "TraqItUi:build:development"
+							"browserTarget": "msalauthng:build:development"
 						}
 					},
 					"defaultConfiguration": "development"
@@ -84,7 +84,7 @@
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "TraqItUi:build"
+						"browserTarget": "msalauthng:build"
 					}
 				},
 				"test": {
@@ -117,7 +117,7 @@
 			}
 		}
 	},
-	"defaultProject": "TraqItUi",
+	"defaultProject": "msalauthng",
 	"cli": {
 		"defaultCollection": "@angular-eslint/schematics"
 	}
