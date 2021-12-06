@@ -15,8 +15,8 @@ export const GRAPH_API_ENDPOINT = 'https://graph.microsoft.com';
  */
 
 const auth: BrowserAuthOptions = {
-	clientId: '*',
-	authority: '*',
+	clientId: 'b1231f8d-4a9d-4676-aa6f-b57b9df06359',
+	authority: 'https://login.microsoftonline.com/c88844d6-4740-480d-98fc-e50752240f05',
 	redirectUri: '/',
 	postLogoutRedirectUri: '/'
 }

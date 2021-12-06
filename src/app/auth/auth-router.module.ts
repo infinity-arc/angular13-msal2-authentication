@@ -1,8 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { MsalGuard } from "@azure/msal-angular";
-import { AuthComponent } from "./auth/auth.component";
-import { HomeComponent } from "./home/home.component";
+import { AuthComponent } from "./components/auth.component";
 import { ProfileComponent } from "./profile/profile.component";
 
 const authRoutes: Routes = [
@@ -11,10 +10,6 @@ const authRoutes: Routes = [
 		component: AuthComponent,
 		pathMatch: 'full',
 		children: [
-			{
-				path: 'Home',
-				component: HomeComponent
-			},
 			{
 				path: 'profile',
 				component: ProfileComponent,
