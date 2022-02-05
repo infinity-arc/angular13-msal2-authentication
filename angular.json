@@ -117,7 +117,7 @@
 			}
 		}
 	},
-	"defaultProject": "msalauthng",
+	"defaultProject": "msalauth",
 	"cli": {
 		"defaultCollection": "@angular-eslint/schematics"
 	}

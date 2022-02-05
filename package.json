@@ -46,5 +46,17 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.4.3"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.",
+  "main": "angular.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinity-arc/angular13-msal2-authentication.git"
+  },
+  "author": "Cliff Crerar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infinity-arc/angular13-msal2-authentication/issues"
+  },
+  "homepage": "https://github.com/infinity-arc/angular13-msal2-authentication#readme"
 }
